@@ -26,8 +26,8 @@ pip install -U --user keras_preprocessing==1.0.5 --no-deps
 #### Step 1: Install required packages:
 sudo apt-get install pkg-config zip g++ zlib1g-dev unzip python
 
-#### Step 2: Download Bazel. (I have posted it in my repository as bazel-0.19.2-installer-linux-x86_64.sh):
-*** Put the file in HOME directory
+#### Step 2: Download Bazel. (bazel-0.19.2-installer-linux-x86_64.sh):
+https://github.com/bazelbuild/bazel/releases
 
 #### Step 3: Run the installer:
 chmod +x bazel-0.19.2-installer-linux-x86_64.sh
