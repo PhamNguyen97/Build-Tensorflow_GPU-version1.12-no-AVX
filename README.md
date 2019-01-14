@@ -15,7 +15,7 @@ The following NVIDIA® software must be installed on your system:
 - (Optional) TensorRT 4.0 to improve latency and throughput for inference on some models.
 
 ## Install Python and the TensorFlow package dependencies UBUNTU,MAC OS
-sudo apt install python-dev python-pip  # or python3-dev python3-pip
+- sudo apt install python-dev python-pip  # or python3-dev python3-pip
 
 ## Install the TensorFlow pip package dependencies (if using a virtual environment, omit the --user argument):
 - pip install -U --user pip six numpy wheel mock
