@@ -7,12 +7,12 @@ Build a TensorFlow pip package from source and install it on Ubuntu Linux and ma
 ## Install Software requirements : link _ https://www.tensorflow.org/install/gpu
 The following NVIDIA® software must be installed on your system:
 
-NVIDIA® GPU drivers —CUDA 9.0 requires 384.x or higher. ( SHOULD BE VERSION 9.0)
-CUDA® Toolkit —TensorFlow supports CUDA 9.0.
-CUPTI ships with the CUDA Toolkit.
-cuDNN SDK (>= 7.2)
-(Optional) NCCL 2.2 for multiple GPU support.
-(Optional) TensorRT 4.0 to improve latency and throughput for inference on some models.
+- NVIDIA® GPU drivers —CUDA 9.0 requires 384.x or higher. ( SHOULD BE VERSION 9.0)
+- CUDA® Toolkit —TensorFlow supports CUDA 9.0.
+- CUPTI ships with the CUDA Toolkit.
+- cuDNN SDK (>= 7.2)
+- (Optional) NCCL 2.2 for multiple GPU support.
+- (Optional) TensorRT 4.0 to improve latency and throughput for inference on some models.
 
 ## Install Python and the TensorFlow package dependencies UBUNTU,MAC OS
 sudo apt install python-dev python-pip  # or python3-dev python3-pip
@@ -23,28 +23,28 @@ pip install -U --user keras_applications==1.0.6 --no-deps
 pip install -U --user keras_preprocessing==1.0.5 --no-deps
 
 ## Install Bazel 0.19.0 _ For UBUNTU:
-- Step 1: Install required packages
+- Step 1: Install required packages:
 sudo apt-get install pkg-config zip g++ zlib1g-dev unzip python
 
-- Step 2: Download Bazel. (I have posted it in my repository as bazel-0.19.2-installer-linux-x86_64.sh)
+- Step 2: Download Bazel. (I have posted it in my repository as bazel-0.19.2-installer-linux-x86_64.sh):
 *** Put the file in HOME directory
 
-## Step 3: Run the installer
-chmod +x bazel-0.19.2-installer-linux-x86_64.sh
-./bazel-0.19.2-installer-linux-x86_64.sh --user
+- Step 3: Run the installer:
++ chmod +x bazel-0.19.2-installer-linux-x86_64.sh
++ ./bazel-0.19.2-installer-linux-x86_64.sh --user
 
-## Step 4: Set up your environment
-export PATH="$PATH:$HOME/bin"
+- Step 4: Set up your environment:
++ export PATH="$PATH:$HOME/bin"
 
-## Step 5: Install the JDK
-sudo apt-get install openjdk-8-jdk
+- Step 5: Install the JDK:
++ sudo apt-get install openjdk-8-jdk
 
-## Step 6: Add Bazel distribution URI as a package source
-echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
-curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+- Step 6: Add Bazel distribution URI as a package source:
++ echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
++ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 
-## Step 7: Install and update Bazel
-sudo apt-get update && sudo apt-get install bazel
+- Step 7: Install and update Bazel:
++ sudo apt-get update && sudo apt-get install bazel
 
 # BUILD TENSORFLOW:
 ## Download the TensorFlow source code
