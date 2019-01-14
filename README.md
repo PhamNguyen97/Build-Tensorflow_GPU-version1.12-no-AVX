@@ -72,9 +72,9 @@ p/s: replace pip3 by pip for python2.
 
 # Test tensorflow-gpu:
 in terminal: 
->> python3
->> import tensorflow as tf
->> print(tf.contrib.eager.num_gpus())
+> python3
+> import tensorflow as tf
+> print(tf.contrib.eager.num_gpus())
 
 output:
 yyyy-mm-dd hh:mm:ss.nnnnn: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2212 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 3GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
