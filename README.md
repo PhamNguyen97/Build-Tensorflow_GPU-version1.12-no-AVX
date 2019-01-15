@@ -1,5 +1,5 @@
 # Build-Tensorflow_GPU-version1.12-no-AVX
-Tensorflow_GPU version 1.12 for old CPU with no AVX support.
+Tensorflow_GPU version 1.12 UBUNTU 18.04 for old CPU with no AVX support.
 
 # Build from source
 Build a TensorFlow pip package from source and install it on Ubuntu Linux and macOS.
